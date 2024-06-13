@@ -64,7 +64,19 @@ Author:
 } */
 
 .new-logo {
-  height: 200px;
+  height: 80px;
+}
+.new-logo2 {
+  height: 60px;
+}
+@media (max-width: 480px) {
+  .new-logo {
+    height: 50px;
+  }
+
+  .navbar .navbar-brand h2 {
+    font-size: 0.7rem;
+  }
 }
 
 .nav-logo {
@@ -81,12 +93,15 @@ Author:
 
 .btn-default {
   text-transform: uppercase;
-  color: #cbb58b;
-  background: none;
-  border: 3px solid #cbb58b;
+  background: rgb(64, 64, 239);
+  border: 1px solid #0f0e0c;
   font-size: 18px;
   padding: 16px 36px;
   border-radius: 0;
+}
+
+.btn-default a {
+  color: white;
 }
 
 @media (min-width: 767px) {
@@ -98,7 +113,11 @@ Author:
 .btn-default:hover {
   color: #fff;
   background: #2c3cb5;
-  border: 3px solid #cbb58b;
+  border: 3px solid #8e8bcb;
+}
+
+.btn-default a :hover {
+  color: white;
 }
 
 .btn:focus {
@@ -152,6 +171,9 @@ Author:
   padding-left: 0;
   padding-right: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .navbar-nav {
@@ -229,11 +251,11 @@ Author:
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navbar-light .navbar-toggler {
-  border: 1px solid #cbb58b;
+  border: 1px solid #090806;
   z-index: 999;
   cursor: pointer;
   outline: none;
@@ -362,14 +384,14 @@ p {
 }
 
 a {
-  color: #cbb58b;
+  color: #f9f7f2;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 a:hover {
   text-decoration: none;
-  color: #2d2d2d;
+  color: #eacdcd;
 }
 
 .btn {
@@ -4544,17 +4566,20 @@ div.panel p {
 }
 
 .header-topbar {
-  padding: 10px;
-  background: rgb(122, 179, 230);
+  padding: 5px;
+  background: rgb(13, 116, 206);
 }
 
 .header-top_address {
-  color: #d8d8d8;
-  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #e8d2d2;
+  font-size: 10px;
 }
+
 .header-top_address .header-top_list {
-  display: inline-block;
-  margin-right: 22px;
+  margin-right: 10px;
 }
 @media (max-width: 768px) {
   .header-top_address .header-top_list:last-child {

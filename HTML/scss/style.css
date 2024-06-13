@@ -125,7 +125,7 @@ Author:
 .dropdown-item.active:focus,
 .dropdown-item.active:active,
 .dropdown-item:active {
-  color: #FFF;
+  color: #fff;
 }
 
 .nav-toggle_icon {
@@ -240,7 +240,7 @@ Author:
   }
   .navbar {
     padding: 0;
-    margin: -113px 0 0 0;
+    /* margin: -113px 0 0 0; */
   }
   .navbar-nav {
     padding: 10px 10px 10px 10px;
@@ -346,9 +346,9 @@ a:hover {
 .slider_img img {
   min-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
 }
 @media (max-width: 500px) {
   .slider_img img {
@@ -686,7 +686,11 @@ a:hover {
 .event-img_title {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
   padding: 85px 0 20px 0;
   border-radius: 5px;
 }
@@ -1491,7 +1495,8 @@ footer h3 {
   max-width: 710px;
 }
 @media (min-width: 992px) {
-  .quote .quote_text:before, .quote .quote_text:after {
+  .quote .quote_text:before,
+  .quote .quote_text:after {
     position: absolute;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -1571,7 +1576,7 @@ footer h3 {
   top: 0;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 1200px) {
   .our-teachers-block .teachers-img {
@@ -1731,7 +1736,7 @@ select.form-control.custom-select {
   top: 0;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .course_box h4 {
   font-weight: 600;
@@ -2167,7 +2172,11 @@ select.form-control.custom-select {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(0, 0, 0) 100%
+  );
 }
 .campus-img_block .campus-title-block h4 {
   color: #fff;
@@ -2614,7 +2623,8 @@ select.form-control.custom-select {
   .pagination li {
     display: none;
   }
-  .pagination li:first-child, .pagination li:last-child {
+  .pagination li:first-child,
+  .pagination li:last-child {
     display: block;
   }
 }
@@ -4172,7 +4182,8 @@ div.panel p {
 .header-top_login2 a {
   color: #fff;
 }
-.header-top_login a:hover, .header-top_login a:focus,
+.header-top_login a:hover,
+.header-top_login a:focus,
 .header-top_login2 a:hover,
 .header-top_login2 a:focus {
   color: #cbb58b;
@@ -4256,4 +4267,4 @@ div.panel p {
     display: block;
     transition: all 0.2s ease;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

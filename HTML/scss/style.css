@@ -216,7 +216,7 @@ Author:
 
 @media (max-width: 1200px) {
   .navbar-nav > li {
-    margin: 74px 10px 74px 10px;
+    /* margin: 74px 10px 74px 10px; */
   }
 }
 @media (max-width: 991px) {
@@ -240,7 +240,7 @@ Author:
   }
   .navbar {
     padding: 0;
-    /* margin: -113px 0 0 0; */
+    margin: -113px 0 0 0;
   }
   .navbar-nav {
     padding: 10px 10px 10px 10px;

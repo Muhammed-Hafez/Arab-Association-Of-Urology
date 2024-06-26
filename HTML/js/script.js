@@ -26,29 +26,31 @@ $(function () {
     });
   }
 
-  let currentIndex = 0;
-  let direction = 1;
-
-  function showNextImage() {
-    const slider = document.getElementById("slider");
-    const images = slider.getElementsByTagName("img");
-    const totalImages = images.length;
-
-    const visibleImages = 6;
-    const imageWidth = 210;
-
-    currentIndex += direction;
-
-    if (currentIndex >= totalImages - visibleImages || currentIndex <= 0) {
-      direction *= -1;
-    }
-
-    const translateX = -currentIndex * imageWidth;
-
-    slider.style.transform = `translateX(${translateX}px)`;
-  }
-
-  setInterval(showNextImage, 1000);
+  $(document).ready(function () {
+    $(".slider").slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 5,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
 
   // About
   if ($(".single-item").length) {
@@ -56,6 +58,7 @@ $(function () {
       arrows: false,
       dots: true,
       autoplay: true,
+      autoplaySpeed: 5000,
     });
   }
 

@@ -89,8 +89,7 @@ Author:
 
 .btn-default {
   text-transform: uppercase;
-  background: rgb(64, 64, 239);
-  border: 1px solid #0f0e0c;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
   font-size: 18px;
   padding: 16px 36px;
   border-radius: 0;
@@ -108,7 +107,7 @@ Author:
 
 .btn-default:hover {
   color: #fff;
-  background: #2c3cb5;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
   border: 3px solid #8e8bcb;
 }
 
@@ -121,7 +120,7 @@ Author:
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
-  background: #cbb58b;
+  background: #e1980f;
 }
 
 .dropdown-menu {
@@ -242,12 +241,19 @@ Author:
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.open,
 .navbar-light .navbar-nav .open > .nav-link {
-  color: #3558e1;
+  color: #745959;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
-  font-size: 15px;
+  font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+  }
 }
 
 .navbar-light .navbar-toggler {
@@ -293,7 +299,7 @@ Author:
   }
   .navbar-nav {
     padding: 10px 10px 10px 10px;
-    background-image: linear-gradient(to right, #37699b, #0f2d4b, #4da6ff);
+    text-align: center;
   }
   .navbar-light .navbar-toggler {
     margin: 28px 6px;
@@ -451,10 +457,6 @@ a:hover {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-@media (max-width: 576px) {
-  .slider_title h1 {
-  }
-}
 
 .slider-btn {
   text-align: start;
@@ -462,7 +464,7 @@ a:hover {
 }
 
 .carousel-indicators .active {
-  background: #3542cf;
+  background: #8389c7;
 }
 
 .fa-slider {
@@ -513,7 +515,7 @@ a:hover {
    ABOUT
    ============================================================== */
 .about {
-  padding: 97px 0 56px;
+  padding: 50px 0 56px;
   background: #fff;
 }
 .about h2 {
@@ -526,22 +528,44 @@ a:hover {
   color: #2d2d2d;
   line-height: 1.8;
   margin: 20px 0;
+  font-size: 1rem;
 }
 .about img {
   margin: 0 auto;
   display: block;
 }
 
+.benefits {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.benefits-logo {
+  width: 80%;
+  align-self: center;
+}
+
 /* ==============================================================
    OUR COURSES
    ============================================================== */
 .our_courses {
-  padding: 97px 0;
+  padding: 50px 0;
   width: 100%;
 }
+
+.course-header {
+  width: 100%;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: aliceblue;
+}
 .our_courses h2 {
-  font-weight: 700;
-  margin: 0 0 28px;
+  width: 100%;
+  margin-left: 3rem;
+  font-size: 2rem;
 }
 .our_courses .courses_box a {
   text-decoration: none;
@@ -762,15 +786,12 @@ a:hover {
 .slider-container {
   width: 100%;
   overflow: hidden;
-  position: relative;
-  transition: transform 1s ease-in-out;
-  display: block;
+  padding: 3rem;
 }
 
 .slider {
-  width: 100%;
   display: flex;
-  transition: transform 1s ease;
+  width: 100%;
 }
 
 .row {
@@ -779,13 +800,11 @@ a:hover {
 
 .slider img {
   width: 100%;
-  height: 200px;
 }
 
 @media (max-width: 768px) {
   .slider img {
     width: 100%;
-    height: 150px;
   }
   .slider {
     display: flex;
@@ -798,9 +817,16 @@ a:hover {
 }
 
 @media (max-width: 578px) {
+  .our_courses h2 {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  .course-header {
+    padding: 0.5rem;
+  }
+
   .slider img {
     width: 100%;
-    height: 100px;
   }
   .slider {
     display: flex;
@@ -809,6 +835,7 @@ a:hover {
 
   .slider-container {
     width: 100%;
+    padding: 1rem;
   }
 }
 
@@ -818,7 +845,6 @@ a:hover {
 
 .courses-img img {
   width: 100%;
-  padding: 1rem;
 }
 
 /* ==============================================================
@@ -1366,7 +1392,7 @@ a:hover {
    FOOTER
    ============================================================== */
 footer {
-  background: rgb(72, 81, 105);
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
   padding: 60px 0 100px;
 }
 
@@ -1698,6 +1724,7 @@ footer h3 {
   color: #2d2d2d;
   line-height: 1.8;
   text-align: center;
+  padding: 1rem;
 }
 .welcome_about img {
   width: 100%;
@@ -1710,7 +1737,7 @@ footer h3 {
 
 .btn-about {
   background: none;
-  border: 3px solid #8bc7cb;
+  border: 2px solid #0a3e42;
   border-radius: 2px;
   padding: 1rem;
   color: #292217;
@@ -1761,6 +1788,32 @@ footer h3 {
   position: relative;
   max-width: 710px;
 }
+
+.objectives {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.objec-item {
+  background-color: rgb(232, 237, 241);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.objectives h4 {
+  font-weight: 550;
+}
+
+.objectives p {
+  text-align: justify;
+}
+
+.objectives h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 @media (min-width: 992px) {
   .quote .quote_text:before,
   .quote .quote_text:after {
@@ -1817,6 +1870,12 @@ footer h3 {
   }
 }
 
+@media (max-width: 480px) {
+  .objectives h2 {
+    font-size: 1rem;
+  }
+}
+
 /* ==============================================================
    ABOUT OUR TEACHERS
    ============================================================== */
@@ -1830,35 +1889,33 @@ footer h3 {
 }
 
 .our-teachers-block {
+  display: flex;
   background: #fff;
   border: 1px solid #ececec;
-  /* -webkit-box-shadow: 0px 5px 34px 8px #ececec;
-  -moz-box-shadow: 0px 5px 34px 8px #ececec;
-  box-shadow: 0px 5px 34px 8px #ececec; */
   position: relative;
   min-height: 205px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 991px) {
+  .our-teachers-block {
+    display: block;
+  }
+}
 .our-teachers-block .teachers-img {
   width: 45%;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
+
 @media (max-width: 1200px) {
   .our-teachers-block .teachers-img {
     width: 35%;
   }
 }
 .our-teachers-block .teachers-description {
-  margin-left: 45%;
-  padding: 20px 85px 15px 20px;
+  padding: 10px 10px 10px 10px;
 }
 @media (max-width: 1200px) {
-  .our-teachers-block .teachers-description {
-    margin-left: 35%;
+  .our-teachers-block {
   }
 }
 .our-teachers-block .teachers-description p {
@@ -1953,11 +2010,15 @@ footer h3 {
   gap: 0.5rem;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .associations h1 {
   padding: 1rem;
-  background-color: rgba(248, 225, 225, 0.487);
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: rgb(232, 237, 241);
 }
 
 .associations h2 {
@@ -1965,7 +2026,7 @@ footer h3 {
 }
 
 .international img {
-  height: 200px;
+  height: 100px;
 }
 
 .regional {
@@ -1976,7 +2037,7 @@ footer h3 {
 }
 
 .regional img {
-  height: 200px;
+  height: 100px;
 }
 
 /*
@@ -3929,7 +3990,8 @@ div.panel p {
   }
 
   .new-logo {
-    height: 160px;
+    height: 150px;
+    padding-top: 1.5rem;
   }
 }
 
@@ -3945,7 +4007,7 @@ div.panel p {
 }
 
 .nav-menu2 .navbar-light .navbar-nav .nav-link:hover {
-  color: #bf4107;
+  color: #f1ac8c;
 }
 
 .nav-menu2 .navbar-nav > li {
@@ -3954,12 +4016,12 @@ div.panel p {
 
 .about-style2 h2 {
   text-align: left;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .about-style2 p {
   text-align: justify;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .about-style2 img {
@@ -3976,10 +4038,36 @@ div.panel p {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-btn {
+    margin-left: 1rem;
+  }
+}
 @media (max-width: 480px) {
+  .benefits {
+    display: flex;
+    flex-direction: column;
+  }
+
   .about-btn {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 0.7rem;
+  }
+  .about-style2 p {
+    font-size: 0.7rem;
+    margin: 1rem;
+  }
+
+  .about-style2 h2 {
+    font-size: 2rem;
+    margin: 1rem;
   }
 }
 

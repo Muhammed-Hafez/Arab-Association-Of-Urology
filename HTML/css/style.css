@@ -1889,42 +1889,43 @@ footer h3 {
 }
 
 .our-teachers-block {
-  display: flex;
   background: #fff;
   border: 1px solid #ececec;
+  -webkit-box-shadow: 0px 5px 34px 8px #ececec;
+  -moz-box-shadow: 0px 5px 34px 8px #ececec;
+  box-shadow: 0px 5px 34px 8px #ececec;
   position: relative;
   min-height: 205px;
   margin-bottom: 30px;
 }
-
-@media (max-width: 991px) {
-  .our-teachers-block {
-    display: block;
-  }
-}
 .our-teachers-block .teachers-img {
   width: 45%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  height: 100%;
 }
-
 @media (max-width: 1200px) {
   .our-teachers-block .teachers-img {
     width: 35%;
   }
 }
 .our-teachers-block .teachers-description {
-  padding: 10px 10px 10px 10px;
+  margin-left: 45%;
+  padding: 20px 85px 15px 20px;
 }
 @media (max-width: 1200px) {
-  .our-teachers-block {
+  .our-teachers-block .teachers-description {
+    margin-left: 35%;
   }
 }
 .our-teachers-block .teachers-description p {
   margin: 0;
 }
 .our-teachers-block .teachers-description p span {
-  color: #0d51e4;
-  font-weight: 100;
-  font-size: 15px;
+  color: #1d1b17;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 .social-icons {
@@ -2011,13 +2012,20 @@ footer h3 {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.associations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .associations h1 {
   padding: 1rem;
   font-size: 2rem;
   margin-top: 1rem;
-  text-align: center;
+  text-align: center320;
   background-color: rgb(232, 237, 241);
 }
 

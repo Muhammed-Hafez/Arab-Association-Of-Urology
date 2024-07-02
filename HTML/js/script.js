@@ -111,6 +111,16 @@ $(function () {
     }
   };
 
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $(".navbar-brand").css("margin-top", "20px");
+      } else {
+        $(".navbar-brand").css("margin-top", "2rem");
+      }
+    });
+  });
+
   $('[data-toggle="affix"]').each(function () {
     var ele = $(this),
       wrapper = $("<div></div>");

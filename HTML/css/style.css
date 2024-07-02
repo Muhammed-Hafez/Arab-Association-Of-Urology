@@ -172,8 +172,9 @@ Author:
 }
 
 .navbar-nav {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -182,6 +183,7 @@ Author:
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  transition: margin 0.3s; /* لتأثير السلاسة عند تغيير الهامش */
 }
 
 .nav-brand2 h2 {
@@ -204,12 +206,12 @@ Author:
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
-  color: #1e59b7;
+  color: #252f3e;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4345b4;
+  color: #68829d;
 }
 
 .nav .open > a,
@@ -231,7 +233,8 @@ Author:
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #676be9;
+  color: #f4f4fa;
+  background-image: linear-gradient(to right, #68829d, #324a6a, #5d758d);
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -245,14 +248,20 @@ Author:
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #f9f5f5;
   font-size: 10px;
+  border: 1px solid rgb(245, 232, 232);
+  padding: 5px;
+  margin-right: 8px;
 }
 
 @media (min-width: 1200px) {
   .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #f9f5f5;
     font-size: 15px;
+    border: 1px solid rgb(245, 232, 232);
+    padding: 5px;
+    margin-right: 8px;
   }
 }
 
@@ -295,7 +304,7 @@ Author:
   }
   .navbar {
     padding: 0;
-    margin: -113px 0 0 0;
+    margin: -130px 0 0 0;
   }
   .navbar-nav {
     padding: 10px 10px 10px 10px;

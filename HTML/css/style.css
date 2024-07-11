@@ -84,7 +84,7 @@ Author:
 }
 
 .icon-menu {
-  color: #cbb58b;
+  color: #11b1dd;
 }
 
 .btn-default {
@@ -99,16 +99,10 @@ Author:
   color: white;
 }
 
-@media (min-width: 767px) {
-  .btn + .btn {
-    margin-left: 22px;
-  }
-}
-
 .btn-default:hover {
   color: #fff;
   background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
-  border: 3px solid #8e8bcb;
+  border: 1px solid #041427;
 }
 
 .btn-default a :hover {
@@ -120,7 +114,7 @@ Author:
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
-  background: #e1980f;
+  background: #5d758d;
 }
 
 .dropdown-menu {
@@ -136,16 +130,17 @@ Author:
 
 .dropdown-item.active,
 .dropdown-item:active {
-  background-color: #cbb58b;
+  background-color: #2a85e1;
 }
 
 .dropdown-menu1 {
-  left: -225px;
+  left: 225px;
   top: -6px !important;
 }
 
 .dropdown-item:hover {
-  color: #223ccd;
+  color: #000306;
+  background-color: #3b678b;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -159,7 +154,7 @@ Author:
 }
 
 .nav-toggle_icon {
-  color: #cbb58b;
+  color: #2b5681;
 }
 
 .navbar2 {
@@ -194,9 +189,6 @@ Author:
   font-size: 1rem;
 }
 
-.navbar-nav > li {
-}
-
 .navbar-default .navbar-nav > li > a {
   font-size: 19px;
   color: #fff;
@@ -206,12 +198,12 @@ Author:
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
-  color: #252f3e;
+  color: #0f2d5a;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #68829d;
+  color: #0b3562;
 }
 
 .nav .open > a,
@@ -224,7 +216,7 @@ Author:
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
   background: none;
-  color: #cbb58b;
+  color: #072953;
 }
 
 .bg-faded {
@@ -244,13 +236,12 @@ Author:
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.open,
 .navbar-light .navbar-nav .open > .nav-link {
-  color: #745959;
+  color: #053b8c;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #f9f5f5;
-  font-size: 10px;
-  border: 1px solid rgb(245, 232, 232);
+  font-size: 12px;
   padding: 5px;
   margin-right: 8px;
 }
@@ -259,7 +250,6 @@ Author:
   .navbar-light .navbar-nav .nav-link {
     color: #f9f5f5;
     font-size: 15px;
-    border: 1px solid rgb(245, 232, 232);
     padding: 5px;
     margin-right: 8px;
   }
@@ -275,12 +265,6 @@ Author:
 
 .fa-common {
   font-weight: 700;
-}
-
-@media (max-width: 1200px) {
-  .navbar-nav > li {
-    /* margin: 74px 10px 74px 10px; */
-  }
 }
 
 @media (max-width: 991px) {
@@ -492,7 +476,7 @@ a:hover {
     line-height: 1.5;
   }
   .btn-default {
-    width: 50%;
+    width: 100%;
     margin-bottom: 10px;
     font-size: 13px;
   }
@@ -573,7 +557,7 @@ a:hover {
 }
 .our_courses h2 {
   width: 100%;
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-size: 2rem;
 }
 .our_courses .courses_box a {
@@ -594,9 +578,11 @@ a:hover {
 .our_courses .courses_box img {
   margin: 0;
   width: 100%;
+  height: 300px;
 }
 .our_courses .courses_box p {
   margin: 0;
+  padding: 20px;
 }
 .our_courses .courses_box h3 {
   font-weight: 600;
@@ -684,7 +670,6 @@ a:hover {
 
 .course-box-content {
   display: block;
-  padding: 30px 20px;
 }
 
 .courses_icon {
@@ -856,6 +841,32 @@ a:hover {
   width: 100%;
 }
 
+.category-slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.category-slide {
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
+  height: 250px;
+  margin: 0.5rem;
+}
+
+.category-slide h3 {
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+}
+
+.category-slide img {
+  height: 200px;
+  width: 100%;
+}
+
 /* ==============================================================
    EVENTS
    ============================================================== */
@@ -965,7 +976,7 @@ a:hover {
 
 .event_date {
   width: 82px;
-  background: #665c7c;
+  background: #345e85;
   float: left;
   text-align: center;
   border-radius: 2px;
@@ -975,7 +986,7 @@ a:hover {
 }
 
 .event-date-wrap {
-  border: 1px dashed #8d84a0;
+  border: 1px dashed #3996e2;
   margin: 8px 8px;
   padding: 4px 0;
 }
@@ -1023,7 +1034,8 @@ a:hover {
    DETAILED CHART
    ============================================================== */
 .detailed_chart {
-  background: url(../images/chart_bg.jpg) no-repeat;
+  background: url(../images/Emirates\ Urological\ logos/Web_Header.jpg)
+    no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 97px 0;
@@ -1131,13 +1143,15 @@ a:hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.blog-img_box:hover {
-  -webkit-box-shadow: 0px 15px 30px -2px rgba(214, 214, 214, 0.8);
-  box-shadow: 0px 15px 30px -2px rgba(214, 214, 214, 0.8);
-}
 
 .blog_display {
   width: 100%;
+}
+
+.edu-partner {
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
 .home_blog_link {
@@ -1210,10 +1224,14 @@ a:hover {
   transform: translateY(-50%) translateX(-50%);
 }
 
+.blog-img_box {
+  width: 100%;
+}
+
 .blog-img_box img {
   padding: 1rem;
   height: 300px;
-  width: 100%;
+  width: 555px;
 }
 
 @media (max-width: 1200px) {
@@ -1484,7 +1502,7 @@ footer {
 }
 
 .btn-warning {
-  background: #a9ccd6;
+  background: #3b7d94;
   border: none;
   border-radius: 3px;
   padding: 17px 34px;
@@ -1503,7 +1521,7 @@ footer {
 
 .btn-warning:hover {
   border: none;
-  background: #bfa97f;
+  background: #0e4f6b;
 }
 
 .foot-logo {
@@ -1696,16 +1714,11 @@ footer h3 {
   background: #ccc;
 }
 
-.about_bg {
-  background: url(../images/about-bg.jpg) no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
 .about_bg h1 {
   text-align: center;
   color: #fff;
   margin: 0;
-  padding: 37px 0 90px;
+  padding: 20px 0 50px;
   font-weight: 700;
 }
 
@@ -1742,6 +1755,27 @@ footer h3 {
 .btns_about {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.btns_about_asu {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .btns_about_asu {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.btns_about_asu .btn-about {
+  background-color: rgb(11, 86, 139);
+  color: white;
 }
 
 .btn-about {
@@ -1751,7 +1785,7 @@ footer h3 {
   padding: 1rem;
   color: #292217;
   font-size: 15px;
-  margin: 16px 0 0;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -1912,7 +1946,7 @@ footer h3 {
   position: absolute;
   bottom: 0;
   top: 0;
-  height: 100%;
+  height: 200px;
 }
 @media (max-width: 1200px) {
   .our-teachers-block .teachers-img {
@@ -1921,7 +1955,7 @@ footer h3 {
 }
 .our-teachers-block .teachers-description {
   margin-left: 45%;
-  padding: 20px 85px 15px 20px;
+  padding: 20px 50px 15px 20px;
 }
 @media (max-width: 1200px) {
   .our-teachers-block .teachers-description {
@@ -2425,28 +2459,27 @@ select.form-control.custom-select {
 /* ==============================================================
    ADMISSION FORM RULES 
    ============================================================== */
-.admission-form_rules {
-  padding: 60px 0;
-}
-.admission-form_rules h2 {
-  font-weight: 700;
-  margin: 0 0 28px;
-}
-.admission-form_rules p {
-  line-height: 1.8;
+
+.admission-body {
+  background: url(../images/Emirates\ Urological\ logos/Web_Header6.jpg)
+    no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-.admission-form_listed {
-  padding: 66px 0 0;
-  margin: 0;
+.admission-form_rules h2 {
+  width: 100%;
+  text-align: center;
+  padding: 10rem;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ba1b1b;
 }
-.admission-form_listed li {
-  list-style: none;
-  background: url(../images/right-icon.png) no-repeat;
-  font-size: 17px;
-  color: #cbb58b;
-  padding-left: 30px;
-  line-height: 2;
+
+.join_img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -2484,7 +2517,8 @@ select.form-control.custom-select {
 }
 
 .admission_form {
-  padding: 0 0 98px;
+  padding: 0 0 50px;
+  background-color: rgba(11, 70, 118, 0.278);
 }
 .admission_form img {
   margin: 0 auto;
@@ -2493,11 +2527,12 @@ select.form-control.custom-select {
 .admission_form h2 {
   text-align: center;
   font-weight: 700;
+  color: aliceblue;
   margin: 0 0 28px;
 }
 .admission_form label {
   width: 100%;
-  margin: 13px 0;
+  color: aliceblue;
 }
 
 .form-control {
@@ -2794,14 +2829,33 @@ select.form-control.custom-select {
    BLOG
    ============================================================== */
 .blog-wrap {
-  padding: 98px 0;
+  padding: 0;
+}
+
+.sample-head {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7f7;
+}
+
+.sample-head h3 {
+  margin-top: 10px;
+}
+.sample-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sample-img {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .blog-img_block {
   position: relative;
-}
-.blog-img_block img {
-  padding-left: 40px;
 }
 
 .blog-date {
@@ -3069,10 +3123,16 @@ select.form-control.custom-select {
    BLOG POST
    ============================================================== */
 .blogpost-quotes {
-  background: #f4eee3;
-  display: inline-block;
   padding: 4px 36px;
   margin: 12px 0 0 0;
+}
+
+.dr-card {
+  height: 300px;
+}
+
+.dr-card img {
+  height: 250px;
 }
 .blogpost-quotes span {
   font-size: 32px;
@@ -3081,6 +3141,7 @@ select.form-control.custom-select {
   font-weight: 700;
   font-style: italic;
   padding: 0px 65px;
+  text-align: center;
 }
 
 .blogpost_list {
@@ -3189,7 +3250,7 @@ p.blogpost-rply a {
 }
 
 .event-date {
-  background: #cbb58b;
+  background: rgb(8, 79, 130);
   padding: 20px 5px;
 }
 .event-date h4 {
@@ -3208,10 +3269,10 @@ p.blogpost-rply a {
 }
 
 .event-time {
-  background: #b39a6b;
+  background: rgb(12, 90, 146);
   padding: 8px 0;
   display: block;
-  color: #e8dabe;
+  color: #fffffe;
   text-align: center;
 }
 
@@ -3244,16 +3305,16 @@ p.blogpost-rply a {
   text-transform: uppercase;
   font-size: 15px;
   text-decoration: underline;
-  color: #cbb58b;
+  color: #1063a8;
   font-weight: 700;
 }
 
 .event-toggle:focus {
-  color: #cbb58b;
+  color: #084263;
 }
 
 .event-toggle:hover {
-  color: #b39a6b;
+  color: #0b6aa5;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -3266,11 +3327,11 @@ p.blogpost-rply a {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border-bottom: 2px solid #cbb58b;
+  border-bottom: 2px solid #0c3966;
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   border-top: 1px solid #fff;
-  color: #cbb58b;
+  color: #042947;
 }
 
 .nav-tabs {
@@ -3289,8 +3350,8 @@ p.blogpost-rply a {
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-color: #fff #fff #fff;
-  color: #cbb58b;
-  border-bottom: 2px solid #cbb58b;
+  color: #2e8fd9;
+  border-bottom: 2px solid #273b54;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -4052,7 +4113,8 @@ div.panel p {
 
 .about-btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -4062,7 +4124,8 @@ div.panel p {
   }
 
   .about-btn {
-    margin-left: 1rem;
+    padding: 1rem;
+    gap: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -4105,7 +4168,37 @@ div.panel p {
 
 .detailed_chart2 {
   padding: 97px 0;
-  background: #cbb58b;
+  background: url(../images/Emirates\ Urological\ logos/Web_Header.jpg)
+    no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.register-asu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.chart-text1 {
+  text-align: center;
+}
+.chart-text1 p {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .register-asu {
+    display: flex;
+  }
+
+  .chart-text1 p {
+    font-size: 24px;
+  }
 }
 
 .faq {
@@ -4113,17 +4206,44 @@ div.panel p {
 }
 
 .login {
-  padding: 97px 0;
+  padding: 0;
+}
+
+.login_body {
+  background: url(../images/Emirates\ Urological\ logos/Web_Header1.jpg)
+    no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .login .btn {
   width: 100%;
 }
+
+.btn-login {
+  border: 1px solid #fff;
+}
+
+.btn-login:hover {
+  background-image: linear-gradient(to right, #9babba, #5c80a1);
+}
+
 .login .modal-content {
   border: 1px solid #ccc;
   padding: 20px;
 }
 
+.login-btn {
+  margin-bottom: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
 .sign-up {
+  display: none;
   padding: 97px 0;
 }
 .sign-up .form-control {
@@ -4137,10 +4257,33 @@ div.panel p {
   margin-right: 10px;
 }
 
+.membership-benefits {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .sign-up-form {
-  border: 1px solid #ccc;
   padding: 20px;
   border-radius: 3px;
+  background-color: rgba(88, 149, 192, 0.357);
+}
+
+.sign-up_footer {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.foot-signup {
+  color: #fff;
+  font-size: 22px;
+}
+.sign-up label {
+  color: aliceblue;
 }
 
 .gallery {
@@ -4301,10 +4444,7 @@ div.panel p {
 }
 
 .video-section .pattern-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 110px 0 32px;
-  min-height: 800px;
-  /* Incase of overlay problems just increase the min-height*/
+  padding-top: 5px;
 }
 
 .video-section h1,
@@ -4541,14 +4681,15 @@ div.panel p {
 }
 
 .pricing {
-  padding: 98px 0;
-  background: #f3f3f3;
+  padding: 60px 0;
 }
 
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
-  background: #fff;
+  color: #d2e5e7;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 22px;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -4566,10 +4707,6 @@ div.panel p {
   font-size: 25px;
 }
 
-.bg-gold {
-  background-color: #cbb58b !important;
-}
-
 .price li {
   border-bottom: 1px solid #eee;
   padding: 20px;
@@ -4582,13 +4719,59 @@ div.panel p {
 }
 
 .price .button {
-  background-color: #cbb58b;
   border: none;
   color: #fff;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+  background-color: rgba(88, 149, 192, 0.756);
+}
+
+.price .button:hover {
+  background-color: rgba(53, 86, 110, 0.756);
+}
+
+.table-columns-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents;
+}
+.benefits-list li {
+  background-color: rgba(88, 149, 192, 0.756);
+  padding: 2rem;
+  margin: 1rem;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.icon-benefits {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding: 5px;
+}
+
+.icon-special {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .table-columns-benefits {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .call-to_action {
@@ -4748,7 +4931,7 @@ div.panel p {
 .header-top_login a:focus,
 .header-top_login2 a:hover,
 .header-top_login2 a:focus {
-  color: #cbb58b;
+  color: #0d306d;
 }
 
 @media (max-width: 574px) {

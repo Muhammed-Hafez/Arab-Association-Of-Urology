@@ -27,6 +27,33 @@ $(function () {
   }
 
   $(document).ready(function () {
+    $(".category-slider").slick({
+      slidesToShow: 5,
+      slidesToScroll: 4,
+      arrows: true,
+      speed: 1000,
+      dots: false,
+      pauseOnHover: false,
+      nextArrow: $(".swiper-button-next"),
+      prevArrow: $(".swiper-button-prev"),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
+
+  $(document).ready(function () {
     $(".slider").slick({
       slidesToShow: 8,
       slidesToScroll: 1,
@@ -49,6 +76,13 @@ $(function () {
           },
         },
       ],
+    });
+  });
+
+  document.querySelectorAll(".sign-up-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      document.getElementById("main-content").classList.add("hidden");
+      document.getElementById("sign-up-form").style.display = "block";
     });
   });
 
@@ -114,7 +148,7 @@ $(function () {
   $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
-        $(".navbar-brand").css("margin-top", "20px");
+        $(".navbar-brand").css("margin-top", "10px");
       } else {
         $(".navbar-brand").css("margin-top", "2rem");
       }

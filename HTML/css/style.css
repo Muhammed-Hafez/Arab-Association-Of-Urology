@@ -1801,9 +1801,10 @@ footer h3 {
 
 .btns_about {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 7.5rem;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .btns_about_asu {
@@ -1818,11 +1819,19 @@ footer h3 {
     justify-content: center;
     gap: 20px;
   }
+
+  .btns_about {
+    gap: 1rem;
+  }
 }
 
 .btns_about_asu .btn-about {
-  background-color: rgb(11, 86, 139);
-  color: white;
+  background-color: rgb(202, 209, 214);
+  color: #000;
+}
+.btns_about_asu .btn-about:hover {
+  color: #fff;
+  font-weight: 700;
 }
 
 .btn-about {
@@ -1833,11 +1842,12 @@ footer h3 {
   color: #292217;
   font-size: 15px;
   margin-bottom: 1rem;
+  background-color: rgb(202, 209, 214);
 }
 
 .btn-about-page:hover {
-  background-color: rgb(202, 209, 214);
-  color: #000;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
+  color: #fff;
   font-weight: 700;
 }
 
@@ -1907,10 +1917,12 @@ footer h3 {
 
 .objectives h4 {
   font-weight: 550;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .objectives p {
-  text-align: justify;
+  text-align: center;
 }
 
 .objectives h2 {
@@ -1984,7 +1996,7 @@ footer h3 {
    ABOUT OUR TEACHERS
    ============================================================== */
 .our-teachers {
-  padding: 98px 0;
+  padding: 20px 0;
 }
 .our-teachers h2 {
   text-align: center;
@@ -2129,6 +2141,7 @@ footer h3 {
 
 .associations h1 {
   padding: 1rem;
+  text-align: center;
   font-size: 2rem;
   margin-top: 1rem;
   text-align: center320;
@@ -3191,12 +3204,28 @@ select.form-control.custom-select {
 }
 
 .dr-card {
-  height: 300px;
+  height: 280px;
 }
 
 .dr-card img {
   height: 250px;
+  width: 250px;
 }
+
+.card-one {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dr-card {
+    height: auto;
+  }
+  .card-one img {
+  }
+}
+
 .blogpost-quotes span {
   font-size: 32px;
 }

@@ -596,7 +596,6 @@ a:hover {
 }
 .our_courses .courses_box p {
   margin: 0;
-  padding: 20px;
 }
 .our_courses .courses_box h3 {
   font-weight: 600;
@@ -879,6 +878,20 @@ a:hover {
 .category-slide img {
   height: 200px;
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .category-slide h3 {
+    font-size: 10px;
+  }
+
+  .category-slide {
+    height: 185px;
+  }
+
+  .category-slide img {
+    height: 150px;
+  }
 }
 
 /* ==============================================================
@@ -3377,11 +3390,12 @@ p.blogpost-rply a {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border-bottom: 2px solid #0c3966;
+  border-bottom: 2px solid #053868;
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   border-top: 1px solid #fff;
-  color: #042947;
+  color: #fff;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
 }
 
 .nav-tabs {
@@ -3400,7 +3414,8 @@ p.blogpost-rply a {
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-color: #fff #fff #fff;
-  color: #2e8fd9;
+  color: #fff;
+  background-image: linear-gradient(to right, #444b52, #2d3c4a, #5d758d);
   border-bottom: 2px solid #273b54;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;

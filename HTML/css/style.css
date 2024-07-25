@@ -114,7 +114,7 @@ Author:
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
-  background: #5d758d;
+  background: #003f7e;
 }
 
 .dropdown-menu {
@@ -1836,7 +1836,6 @@ footer h3 {
 
 .btn-about {
   background: none;
-  border: 2px solid #0a3e42;
   border-radius: 2px;
   padding: 1rem;
   color: #292217;
@@ -2013,7 +2012,7 @@ footer h3 {
   position: relative;
   min-height: 205px;
   margin-bottom: 30px;
-  height: 280px;
+  height: 385px;
 }
 .our-teachers-block .teachers-img {
   position: absolute;
@@ -3204,11 +3203,10 @@ select.form-control.custom-select {
 }
 
 .dr-card {
-  height: 280px;
+  height: 500px;
 }
 
 .dr-card img {
-  height: 250px;
   width: 250px;
 }
 
@@ -3221,8 +3219,6 @@ select.form-control.custom-select {
 @media (max-width: 768px) {
   .dr-card {
     height: auto;
-  }
-  .card-one img {
   }
 }
 
